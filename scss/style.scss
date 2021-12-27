@@ -255,18 +255,20 @@ nav {
   @include adaptive-value("width", 30, 16, 0);
   @include adaptive-value("margin-right", 6, 2, 0);
 }
-    @media (max-width: 991.98px) {
-      .navbar-collapse {
-        background-color: #0B1D26;
-        margin-left: -15px;
-        margin-right: -15px;
-        margin-top: -60px;
-        padding-bottom: 20px;
-        padding-top: 30px;
-        @include adaptive-value("padding-right", 100, 10, 0);
-        @include adaptive-value("padding-left", 100, 10, 0);
-      }
-    }
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0B1D26;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -60px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    @include adaptive-value("padding-right", 100, 10, 0);
+    @include adaptive-value("padding-left", 100, 10, 0);
+  }
+}
+
 /*------------------------*/
 
 
@@ -437,9 +439,10 @@ footer {
   .footer-block {
     @include adaptive-value("padding-bottom", 100, 20, 0);
     @include adaptive-value("padding-right", 50, 30, 0);
-display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .copyright {
       @include color3;
       font-weight: 500;
