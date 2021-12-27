@@ -1,34 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
-    <!-- Link Swiper's CSS -->
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="scss/style.css" rel="stylesheet">
     <title>MNTN</title>
+
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MNTN</a>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                </li>
+            </ul>
+            <div class="navbar-nav dropdown">
+                <a class="nav-link d-flex align-items-center dropdown-toggle md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"
+                   href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78A7.893 7.893 0 0 1 12 20c-1.86 0-3.57-.64-4.93-1.72Zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.95 7.95 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83ZM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6Zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11Z"/>
+
+                    </svg>
+                    Account </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownUser1" style="">
+                    <li><a class="dropdown-item md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Settings</a></li>
+                    <li><a class="dropdown-item md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Your profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
 
-<!-- Bootstrap в связке с Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+<main id="slider-example">
+    <div data-bs-spy="scroll" data-bs-target="#slider-example" data-bs-offset="0" tabindex="0">
+        <section id="scrollspyHeadingStart" class="header">
+            <div class="header__bg">
+                <div class="clouds"></div>
+                <div class="mountains"></div>
+                <div class="human"></div>
+            </div>
+            <div class="header__text">
+                <div class="social-wrapper">
+                    <ul class="social">
+                        <li>
+                            <a class="social-link" href="">Follow us</a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M7.8 2.00002H16.2C19.4032 2.00002 22 4.59677 22 7.80002V16.2C22 19.4033 19.4032 22 16.2 22H7.8C4.59675 22 2 19.4033 2 16.2V7.80002C2 4.59677 4.59675 2.00002 7.8 2.00002ZM7.6 4C5.61177 4 4 5.61178 4 7.6V16.4C4 18.3882 5.61177 20 7.6 20H16.4C18.3882 20 20 18.3882 20 16.4V7.6C20 5.61178 18.3882 4 16.4 4H7.6ZM17.25 5.5C17.9404 5.5 18.5 6.05965 18.5 6.75C18.5 7.44036 17.9404 8 17.25 8C16.5596 8 16 7.44036 16 6.75C16 6.05965 16.5596 5.5 17.25 5.5ZM12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23857 17 7 14.7614 7 12C7 9.23858 9.23857 7 12 7ZM12 9C10.3431 9 9 10.3432 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3432 13.6569 9 12 9Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M22.4592 6.01238C21.6896 6.35373 20.8624 6.58442 19.9944 6.68815C20.8803 6.15701 21.5609 5.31598 21.8813 4.31378C21.052 4.80564 20.1336 5.16278 19.156 5.3552C18.3732 4.52112 17.2579 4 16.0235 4C13.6534 4 11.7317 5.92147 11.7317 8.29155C11.7317 8.6279 11.7697 8.95546 11.8429 9.2696C8.27609 9.0906 5.11375 7.38203 2.99709 4.78551C2.62765 5.41935 2.41601 6.15656 2.41601 6.94309C2.41601 8.43204 3.17364 9.74563 4.32523 10.5153C3.62179 10.4929 2.95996 10.2999 2.38139 9.97846C2.38098 9.99639 2.38098 10.0143 2.38098 10.0324C2.38098 12.1118 3.86033 13.8463 5.82359 14.2406C5.46349 14.3387 5.08434 14.3912 4.69294 14.3912C4.4164 14.3912 4.14755 14.3642 3.88546 14.3142C4.43161 16.0191 6.01653 17.26 7.89454 17.2945C6.42576 18.4457 4.57527 19.1318 2.56453 19.1318C2.21812 19.1318 1.87651 19.1114 1.54077 19.0717C3.44003 20.2894 5.69591 21 8.1195 21C16.0134 21 20.3302 14.4605 20.3302 8.78918C20.3302 8.60314 20.326 8.41805 20.3177 8.23395C21.1563 7.62886 21.8839 6.87302 22.4592 6.01238Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-text">
+
+                    <div class="header-text__label">A Hiking guide</div>
+                    <h2 class="header-text__title">Be prepared for the <br> Mountains and beyond!</h2>
+                    <a class="header-text__subtitle" href="#scrollspyHeading1">scroll down
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"/>
+                        </svg>
+
+                    </a>
+
+
+                </div>
+                <div class="slider-wrapper">
+                    <ul class="slider nav-pills">
+                        <li><a class="slider-link active" aria-current="page" href="#scrollspyHeadingStart">Start</a>
+                        </li>
+                        <li><a class=" slider-link" href="#scrollspyHeading1">01</a></li>
+                        <li><a class=" slider-link" href="#scrollspyHeading2">02</a></li>
+                        <li><a class=" slider-link" href="#scrollspyHeading3">03</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyHeading1">
+            <div class="slider-number d-flex">
+                <div class="slider-number01 number">
+                    <div class="number__label">GEt Started</div>
+                    <h2 class="number__title">What level of hiker are you?</h2>
+
+
+                    <article>
+                        <p class="number__text">
+                            Determining what level of hiker you are can be an important tool when
+                            planning future hikes. This hiking level guide will help you plan hikes according to
+                            different
+                            hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker
+                            are
+                            you – novice, moderate, advanced moderate, expert, or expert backpacker?
+                            <a class="read-more-show hide" href="#" id="1">Read More
+                                <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"
+                                     fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                          d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"/>
+                                </svg>
+                            </a>
+                            <span class="read-more-content">
+                                 Determining what level of hiker you are can be an important tool when
+                        planning future hikes. This hiking level guide will help you plan hikes according to different
+                        hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are
+                        you – novice, moderate, advanced moderate, expert, or expert backpacker?
+            <a class="read-more-hide hide" href="#" more-id="1">Read Less
+               <svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+<path d="M-3.05176e-05 8L1.40997 9.41L6.99997 3.83L6.99997 24H8.99997V3.83L14.58 9.42L16 8L7.99997 0L-3.05176e-05 8Z"/>
+</svg></a></span>
+                        </p>
+                    </article>
+
+
+                </div>
+                <div class="slider-number__image">
+                    <img src="image/content/01.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id="scrollspyHeading2">
+            <div class="slider-number d-flex">
+
+                <div class="slider-number__image image-order">
+                    <img src="image/content/02.jpg">
+                </div>
+                <div class="slider-number02 number">
+                    <div class="number__label">Hiking Essentials</div>
+                    <h2 class="number__title">Picking the right Hiking Gear!</h2>
+
+
+                    <article>
+                        <p class="number__text">
+                            The nice thing about beginning hiking is that you don’t really need any special gear, you
+                            can probably get away with things you already have. Let’s start with clothing. A typical
+                            mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and
+                            chafe wif they get sweaty or wet. <a class="read-more-show hide" href="#" id="2">Read More
+                            <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"/>
+                            </svg>
+                        </a>
+                            <span class="read-more-content">
+                                 Determining what level of hiker you are can be an important tool when
+                        planning future hikes. This hiking level guide will help you plan hikes according to different
+                        hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are
+                        you – novice, moderate, advanced moderate, expert, or expert backpacker?
+            <a class="read-more-hide hide" href="#" more-id="2">Read Less
+               <svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+<path d="M-3.05176e-05 8L1.40997 9.41L6.99997 3.83L6.99997 24H8.99997V3.83L14.58 9.42L16 8L7.99997 0L-3.05176e-05 8Z"/>
+</svg></a></span>
+                        </p>
+                    </article>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="scrollspyHeading3">
+            <div class="slider-number d-flex">
+                <div class="slider-number03 number">
+                    <div class="number__label">GEt Started</div>
+                    <h2 class="number__title">What level of hiker are you?</h2>
+
+
+                    <article>
+                        <p class="number__text">
+                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag.
+                            Read over the guide, study the map, and have a good idea of what to expect. I like to know
+                            what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a
+                            mile, I make a right turn at the junction..
+                            <a class="read-more-show hide" href="#" id="3">Read More
+                                <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"
+                                     fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                          d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"/>
+                                </svg>
+                            </a>
+                            <span class="read-more-content">
+                                 Determining what level of hiker you are can be an important tool when
+                        planning future hikes. This hiking level guide will help you plan hikes according to different
+                        hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are
+                        you – novice, moderate, advanced moderate, expert, or expert backpacker?
+            <a class="read-more-hide hide" href="#" more-id="3">Read Less
+               <svg width="16" height="24" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+<path d="M-3.05176e-05 8L1.40997 9.41L6.99997 3.83L6.99997 24H8.99997V3.83L14.58 9.42L16 8L7.99997 0L-3.05176e-05 8Z"/>
+</svg></a></span>
+                        </p>
+                    </article>
+
+
+                </div>
+                <div class="slider-number__image">
+                    <img src="image/content/03.jpg">
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-block">
+             <a class="navbar-brand" href="#">MNTN</a>
+            <p>Get out there & discover your next<br> slope, mountain & destination!</p>
+
+        <div class="copyright ">© 2021,
+                    <a href="https://secure.skype.com/portal/profile?intsrc=client-_-windows-_-8.78.0.159-_-.userInfo.profile&amp;tcg=91495cae-a8e3-4c9b-af80-77f7cef4563e" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+                            <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z"></path>
+                        </svg>&nbsp;mashulja150990</a><br>
+                    <a href="mailto:marymatsiuk15@gmail.com" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"></path>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"></path>
+                        </svg>&nbsp;marymatsiuk15@gmail.com</a>
+                </div>
+        </div>
+   <div class="footer-block">
+     <ul>
+            More on The Blog
+              <li><a href="">About MNTN</a></li>
+              <li><a href="">Contributors & Writers</a></li>
+             <li><a href="">Write For Us</a></li>
+          <li><a href="">Contact Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+
+        </ul>
+</div>
+   <div class="footer-block">
+                 <ul>More on MNTN
+            <li><a href="">The Team</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Press</a></li>
+        </ul>
+       </div>
+
+    </div>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="script.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
+
+
+

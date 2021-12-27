@@ -102,3 +102,25 @@ $maxWidthContainer: 1170;
   }
 }
 
+/*------------------------*/
+@mixin color1 {
+  color: white;
+}
+@mixin bgColor1{
+  background-color: white;
+}
+
+@mixin color2 {
+  color: #FBD784;
+}
+@mixin bgColor2{
+  background-color: #FBD784;
+}
+
+@mixin color3 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@mixin bgColor3 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
