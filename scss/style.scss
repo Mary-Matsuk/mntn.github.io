@@ -103,7 +103,7 @@ section {
 
 
         .social-link {
-          @include adaptive-value("font-size", 18, 12, 0);
+          @include adaptive-value("font-size", 18, 14, 0);
           @include color1;
         }
 
@@ -143,7 +143,7 @@ section {
 
       .slider-link {
         @include adaptive-value("line-height", 60, 50, 0);
-        @include adaptive-value("font-size", 18, 12, 0);
+        @include adaptive-value("font-size", 18, 14, 0);
         display: flex;
         @include color3;
       }
@@ -200,14 +200,14 @@ section {
     }
 
     &__title {
-      @include adaptive-value("font-size", 88, 22, 0);
+      @include adaptive-value("font-size", 88, 28, 0);
       @include adaptive-value("line-height", 100, 25, 0);
       @include adaptive-value("margin-bottom", 30, 10, 0);
     }
 
     &__subtitle {
       @include color1;
-      @include adaptive-value("font-size", 18, 10, 0);
+      @include adaptive-value("font-size", 18, 15, 0);
       @include adaptive-value("letter-spacing", 1, 1, 0);
 
       svg {
@@ -241,7 +241,7 @@ nav {
 
 .nav-link, .dropdown, a {
   @include color1;
-  @include adaptive-value("font-size", 18, 14, 0);
+  @include adaptive-value("font-size", 18, 15, 0);
   @include adaptive-value("line-height", 32, 25, 0);
 }
 
@@ -286,7 +286,7 @@ main {
       font-weight: 800;
       @include color2;
       display: flex;
-      @include adaptive-value("font-size", 18, 10, 0);
+      @include adaptive-value("font-size", 18, 12, 0);
       @include adaptive-value("letter-spacing", 6, 2, 0);
       @include adaptive-value("margin-bottom", 30, 5, 0);
       text-transform: uppercase;
@@ -305,7 +305,7 @@ main {
     }
 
     &__title {
-      @include adaptive-value("font-size", 64, 18, 0);
+      @include adaptive-value("font-size", 64, 24, 0);
       @include adaptive-value("line-height", 70, 22, 0);
       @include adaptive-value("margin-bottom", 40, 10, 0);
       z-index: 2;
@@ -313,7 +313,7 @@ main {
 
     &__text {
       @include color1;
-      @include adaptive-value("font-size", 18, 10, 0);
+      @include adaptive-value("font-size", 18, 15, 0);
       @include adaptive-value("line-height", 32, 17, 0);
       @include adaptive-value("letter-spacing", 1, 1, 0);
       z-index: 2;
@@ -402,7 +402,7 @@ main {
   @include color2;
   display: block;
   @include adaptive-value("margin-top", 30, 10, 0);
-  @include adaptive-value("font-size", 18, 10, 0);
+  @include adaptive-value("font-size", 18, 15, 0);
   text-transform: lowercase;
 }
 
@@ -431,7 +431,7 @@ main {
 footer {
   //position: relative;
   background-color: #0B1D26;
-  @include adaptive-value("font-size", 18, 10, 0);
+  @include adaptive-value("font-size", 18, 15, 0);
   @include adaptive-value("line-height", 32, 17, 0);
   display: flex;
   position: relative;
@@ -446,17 +446,17 @@ footer {
     .copyright {
       @include color3;
       font-weight: 500;
-      @include adaptive-value("font-size", 18, 10, 0);
+      @include adaptive-value("font-size", 18, 15, 0);
       @include adaptive-value("line-height", 32, 17, 0);
 
       a {
         @include color3;
-        @include adaptive-value("font-size", 18, 10, 0);
+        @include adaptive-value("font-size", 18, 14, 0);
         @include adaptive-value("line-height", 32, 17, 0);
 
         svg {
-          @include adaptive-value("height", 18, 12, 0);
-          @include adaptive-value("width", 18, 12, 0);
+          @include adaptive-value("height", 18, 14, 0);
+          @include adaptive-value("width", 18, 14, 0);
         }
       }
 
@@ -464,12 +464,12 @@ footer {
     }
 
     ul {
-      @include adaptive-value("font-size", 24, 12, 0);
+      @include adaptive-value("font-size", 24, 16, 0);
       @include color2;
 
       li a {
         font-weight: 500;
-        @include adaptive-value("font-size", 18, 10, 0);
+        @include adaptive-value("font-size", 18, 15, 0);
         @include adaptive-value("line-height", 32, 25, 0);
         @include color1;
       }

@@ -190,7 +190,7 @@ section {
   margin-left: calc(15px + -5 * ((100vw - 320px) / 1600));
 }
 .header__text .social-wrapper .social li .social-link {
-  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
   color: white;
 }
 .header__text .social-wrapper .social li .social-link:hover, .header__text .social-wrapper .social li .social-link:focus {
@@ -218,7 +218,7 @@ section {
 }
 .header__text .slider-wrapper .slider .slider-link {
   line-height: calc(50px + 10 * ((100vw - 320px) / 1600));
-  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
   display: flex;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -261,13 +261,13 @@ section {
   height: 2px;
 }
 .header__text .header-text__title {
-  font-size: calc(22px + 66 * ((100vw - 320px) / 1600));
+  font-size: calc(28px + 60 * ((100vw - 320px) / 1600));
   line-height: calc(25px + 75 * ((100vw - 320px) / 1600));
   margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 .header__text .header-text__subtitle {
   color: white;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   letter-spacing: calc(1px + 0 * ((100vw - 320px) / 1600));
 }
 .header__text .header-text__subtitle svg {
@@ -292,7 +292,7 @@ nav {
 
 .nav-link, .dropdown, a {
   color: white;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   line-height: calc(25px + 7 * ((100vw - 320px) / 1600));
 }
 
@@ -327,7 +327,7 @@ main .number__label {
   font-weight: 800;
   color: #FBD784;
   display: flex;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
   letter-spacing: calc(2px + 4 * ((100vw - 320px) / 1600));
   margin-bottom: calc(5px + 25 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
@@ -344,14 +344,14 @@ main .number__label:before {
   height: 2px;
 }
 main .number__title {
-  font-size: calc(18px + 46 * ((100vw - 320px) / 1600));
+  font-size: calc(24px + 40 * ((100vw - 320px) / 1600));
   line-height: calc(22px + 48 * ((100vw - 320px) / 1600));
   margin-bottom: calc(10px + 30 * ((100vw - 320px) / 1600));
   z-index: 2;
 }
 main .number__text {
   color: white;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
   letter-spacing: calc(1px + 0 * ((100vw - 320px) / 1600));
   z-index: 2;
@@ -434,7 +434,7 @@ main .number__text {
   color: #FBD784;
   display: block;
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   text-transform: lowercase;
 }
 
@@ -460,7 +460,7 @@ main .number__text {
 /*------------------------*/
 footer {
   background-color: #0B1D26;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
   display: flex;
   position: relative;
@@ -475,25 +475,25 @@ footer .footer-block {
 footer .footer-block .copyright {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
 }
 footer .footer-block .copyright a {
   color: rgba(255, 255, 255, 0.5);
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
   line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
 }
 footer .footer-block .copyright a svg {
-  height: calc(12px + 6 * ((100vw - 320px) / 1600));
-  width: calc(12px + 6 * ((100vw - 320px) / 1600));
+  height: calc(14px + 4 * ((100vw - 320px) / 1600));
+  width: calc(14px + 4 * ((100vw - 320px) / 1600));
 }
 footer .footer-block ul {
-  font-size: calc(12px + 12 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   color: #FBD784;
 }
 footer .footer-block ul li a {
   font-weight: 500;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   line-height: calc(25px + 7 * ((100vw - 320px) / 1600));
   color: white;
 }
