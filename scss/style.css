@@ -359,7 +359,6 @@ main .number__text {
   line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
   letter-spacing: calc(1px + 0 * ((100vw - 320px) / 1600));
   z-index: 2;
-  text-align: justify;
 }
 
 .slider-number__image {
@@ -419,8 +418,8 @@ main .number__text {
 }
 @media (max-width: 991.98px) {
   .slider-number01, .slider-number02, .slider-number03 {
-    padding-left: 40px;
-    padding-right: 55px;
+    padding-left: calc(40px + 80 * ((100vw - 320px) / 1600));
+    padding-right: calc(55px + 145 * ((100vw - 320px) / 1600));
   }
 }
 
@@ -462,7 +461,7 @@ main .number__text {
 }
 @media (max-width: 991.98px) {
   .read-more-show, .read-more-hide {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
