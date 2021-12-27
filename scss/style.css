@@ -136,7 +136,7 @@ section {
 }
 .header__bg .clouds:after {
   content: "";
-  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 40%, #0B1D26 140%);
+  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 10%, #0B1D26 140%);
   position: absolute;
   width: 100%;
   height: calc(300px + 1300 * ((100vw - 320px) / 1600));

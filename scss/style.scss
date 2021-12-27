@@ -41,7 +41,7 @@ section {
 
   .clouds:after {
     content: "";
-    background: linear-gradient(330deg, rgba(11, 29, 38, 0) 40%, #0B1D26 140%);
+    background: linear-gradient(330deg, rgba(11, 29, 38, 0) 10%, #0B1D26 140%);
     position: absolute;
     width: 100%;
     @include adaptive-value("height", 1600, 300, 0);
