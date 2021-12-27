@@ -109,6 +109,10 @@ body {
   position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 h1, h2 {
   font-weight: 400;
   font-family: "ChronicleDisplay";
@@ -355,6 +359,7 @@ main .number__text {
   line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
   letter-spacing: calc(1px + 0 * ((100vw - 320px) / 1600));
   z-index: 2;
+  text-align: justify;
 }
 
 .slider-number__image {
@@ -415,7 +420,7 @@ main .number__text {
 @media (max-width: 991.98px) {
   .slider-number01, .slider-number02, .slider-number03 {
     padding-left: 40px;
-    padding-right: 50px;
+    padding-right: 55px;
   }
 }
 
@@ -454,6 +459,11 @@ main .number__text {
   margin-top: calc(10px + 20 * ((100vw - 320px) / 1600));
   font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
   text-transform: lowercase;
+}
+@media (max-width: 991.98px) {
+  .read-more-show, .read-more-hide {
+    margin-bottom: 50px;
+  }
 }
 
 .read-more-show > svg {
