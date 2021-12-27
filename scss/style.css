@@ -468,6 +468,9 @@ footer {
 footer .footer-block {
   padding-bottom: calc(20px + 80 * ((100vw - 320px) / 1600));
   padding-right: calc(30px + 20 * ((100vw - 320px) / 1600));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer .footer-block .copyright {
   color: rgba(255, 255, 255, 0.5);
