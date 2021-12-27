@@ -175,7 +175,7 @@ section {
   .header-text {
     position: relative;
     @include adaptive-value("height", 900, 180, 0);
-    @include adaptive-value("margin-top", 450, 60, 0);
+    @include adaptive-value("margin-top", 450, 30, 0);
     //display: flex;
     //align-items: center;
     &__label {
@@ -184,7 +184,7 @@ section {
       display: flex;
       @include adaptive-value("font-size", 18, 10, 0);
       @include adaptive-value("letter-spacing", 6, 2, 0);
-      @include adaptive-value("margin-bottom", 30, 5, 0);
+      @include adaptive-value("margin-bottom", 30, 8, 0);
       text-transform: uppercase;
       align-items: center;
     }
@@ -201,7 +201,7 @@ section {
 
     &__title {
       @include adaptive-value("font-size", 88, 28, 0);
-      @include adaptive-value("line-height", 100, 25, 0);
+      @include adaptive-value("line-height", 96, 32, 0);
       @include adaptive-value("margin-bottom", 30, 10, 0);
     }
 
@@ -286,9 +286,9 @@ main {
       font-weight: 800;
       @include color2;
       display: flex;
-      @include adaptive-value("font-size", 18, 12, 0);
+      @include adaptive-value("font-size", 18, 10, 0);
       @include adaptive-value("letter-spacing", 6, 2, 0);
-      @include adaptive-value("margin-bottom", 30, 5, 0);
+      @include adaptive-value("margin-bottom", 30, 8, 0);
       text-transform: uppercase;
       align-items: center;
       z-index: 2;
@@ -306,7 +306,7 @@ main {
 
     &__title {
       @include adaptive-value("font-size", 64, 24, 0);
-      @include adaptive-value("line-height", 70, 22, 0);
+      @include adaptive-value("line-height", 70, 27, 0);
       @include adaptive-value("margin-bottom", 40, 10, 0);
       z-index: 2;
     }
@@ -314,7 +314,7 @@ main {
     &__text {
       @include color1;
       @include adaptive-value("font-size", 18, 15, 0);
-      @include adaptive-value("line-height", 32, 17, 0);
+      @include adaptive-value("line-height", 32, 20, 0);
       @include adaptive-value("letter-spacing", 1, 1, 0);
       z-index: 2;
     }
@@ -328,11 +328,14 @@ main {
   @include adaptive-value("padding-right", 50, 5, 0);
   position: relative;
   margin: 0 auto;
+  width: 100%;
+  @media (max-width: 991.98px) {
+    padding-right: 0;
+    padding-left: 0;
+   }
 
   img {
-
     @include adaptive-value("height", 720, 100, 0);
-
     margin: 0 auto;
     object-fit: cover;
     @media (max-width: 991.98px) {
@@ -348,7 +351,7 @@ main {
 }
 
 .slider-number, .container {
-  @include adaptive-value("width", 1462, 220, 0);
+  @include adaptive-value("width", 1462, 250, 0);
   max-width: 2000px;
   margin: 0 auto;
   display: flex;
@@ -359,13 +362,22 @@ main {
   }
 }
 
+@media (max-width: 991.98px) {
+  .slider-number {
+    width: 100%;
+  }
+}
+
 .slider-number01, .slider-number02, .slider-number03 {
   @include adaptive-value("margin-top", 100, 20, 0);
   @include adaptive-value("margin-left", 160, 20, 0);
   @include adaptive-value("padding-left", 50, 15, 0);
   @include adaptive-value("padding-right", 50, 15, 0);
   position: relative;
-
+  @media (max-width: 991.98px) {
+      padding-left: 40px;
+    padding-right: 50px;
+  }
 }
 
 .slider-number01:before, .slider-number02:before, .slider-number03:before {
@@ -432,7 +444,7 @@ footer {
   //position: relative;
   background-color: #0B1D26;
   @include adaptive-value("font-size", 18, 15, 0);
-  @include adaptive-value("line-height", 32, 17, 0);
+  @include adaptive-value("line-height", 32, 20, 0);
   display: flex;
   position: relative;
 
@@ -447,12 +459,12 @@ footer {
       @include color3;
       font-weight: 500;
       @include adaptive-value("font-size", 18, 15, 0);
-      @include adaptive-value("line-height", 32, 17, 0);
+      @include adaptive-value("line-height", 32, 20, 0);
 
       a {
         @include color3;
         @include adaptive-value("font-size", 18, 14, 0);
-        @include adaptive-value("line-height", 32, 17, 0);
+        @include adaptive-value("line-height", 32, 20, 0);
 
         svg {
           @include adaptive-value("height", 18, 14, 0);
@@ -465,6 +477,7 @@ footer {
 
     ul {
       @include adaptive-value("font-size", 24, 16, 0);
+      @include adaptive-value("line-height", 32, 20, 0);
       @include color2;
 
       li a {

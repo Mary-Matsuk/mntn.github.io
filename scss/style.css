@@ -239,7 +239,7 @@ section {
 .header__text .header-text {
   position: relative;
   height: calc(180px + 720 * ((100vw - 320px) / 1600));
-  margin-top: calc(60px + 390 * ((100vw - 320px) / 1600));
+  margin-top: calc(30px + 420 * ((100vw - 320px) / 1600));
 }
 .header__text .header-text__label {
   font-weight: 800;
@@ -247,7 +247,7 @@ section {
   display: flex;
   font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
   letter-spacing: calc(2px + 4 * ((100vw - 320px) / 1600));
-  margin-bottom: calc(5px + 25 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(8px + 22 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
   align-items: center;
 }
@@ -262,7 +262,7 @@ section {
 }
 .header__text .header-text__title {
   font-size: calc(28px + 60 * ((100vw - 320px) / 1600));
-  line-height: calc(25px + 75 * ((100vw - 320px) / 1600));
+  line-height: calc(32px + 64 * ((100vw - 320px) / 1600));
   margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 .header__text .header-text__subtitle {
@@ -327,9 +327,9 @@ main .number__label {
   font-weight: 800;
   color: #FBD784;
   display: flex;
-  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
   letter-spacing: calc(2px + 4 * ((100vw - 320px) / 1600));
-  margin-bottom: calc(5px + 25 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(8px + 22 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
   align-items: center;
   z-index: 2;
@@ -345,14 +345,14 @@ main .number__label:before {
 }
 main .number__title {
   font-size: calc(24px + 40 * ((100vw - 320px) / 1600));
-  line-height: calc(22px + 48 * ((100vw - 320px) / 1600));
+  line-height: calc(27px + 43 * ((100vw - 320px) / 1600));
   margin-bottom: calc(10px + 30 * ((100vw - 320px) / 1600));
   z-index: 2;
 }
 main .number__text {
   color: white;
   font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
-  line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
   letter-spacing: calc(1px + 0 * ((100vw - 320px) / 1600));
   z-index: 2;
 }
@@ -362,6 +362,13 @@ main .number__text {
   padding-right: calc(5px + 45 * ((100vw - 320px) / 1600));
   position: relative;
   margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .slider-number__image {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .slider-number__image img {
   height: calc(100px + 620 * ((100vw - 320px) / 1600));
@@ -381,7 +388,7 @@ main .number__text {
 }
 
 .slider-number, .container {
-  width: calc(220px + 1242 * ((100vw - 320px) / 1600));
+  width: calc(250px + 1212 * ((100vw - 320px) / 1600));
   max-width: 2000px;
   margin: 0 auto;
   display: flex;
@@ -393,12 +400,23 @@ main .number__text {
   }
 }
 
+@media (max-width: 991.98px) {
+  .slider-number {
+    width: 100%;
+  }
+}
 .slider-number01, .slider-number02, .slider-number03 {
   margin-top: calc(20px + 80 * ((100vw - 320px) / 1600));
   margin-left: calc(20px + 140 * ((100vw - 320px) / 1600));
   padding-left: calc(15px + 35 * ((100vw - 320px) / 1600));
   padding-right: calc(15px + 35 * ((100vw - 320px) / 1600));
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .slider-number01, .slider-number02, .slider-number03 {
+    padding-left: 40px;
+    padding-right: 50px;
+  }
 }
 
 .slider-number01:before, .slider-number02:before, .slider-number03:before {
@@ -461,7 +479,7 @@ main .number__text {
 footer {
   background-color: #0B1D26;
   font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
-  line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
   display: flex;
   position: relative;
 }
@@ -476,12 +494,12 @@ footer .footer-block .copyright {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
   font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
-  line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
 }
 footer .footer-block .copyright a {
   color: rgba(255, 255, 255, 0.5);
   font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
-  line-height: calc(17px + 15 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
 }
 footer .footer-block .copyright a svg {
   height: calc(14px + 4 * ((100vw - 320px) / 1600));
@@ -489,6 +507,7 @@ footer .footer-block .copyright a svg {
 }
 footer .footer-block ul {
   font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 12 * ((100vw - 320px) / 1600));
   color: #FBD784;
 }
 footer .footer-block ul li a {
